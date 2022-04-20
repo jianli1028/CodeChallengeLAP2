@@ -1,6 +1,6 @@
 const storySection = document.getElementById("storySection");
 
-fetch("http://localhost:3000/posts")
+fetch("http://localhost:3000/")
     .then((r) => r.json())
     .then((data) => displayStories(data));
 
