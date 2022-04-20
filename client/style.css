@@ -20,6 +20,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,65,185,0.786859631
     padding: 12% 40%;
     position: sticky;
     align-self: center;
+    background: rgb(0, 0, 0, 0.75);
   }
 
   .nav-left {
