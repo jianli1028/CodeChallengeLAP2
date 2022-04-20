@@ -6,7 +6,7 @@ server.use(cors("*"));
 server.use(express.json());
 
 const postsRoutes = require('./routes/')
-server.use('/books', postsRoutes)
+server.use('/posts', postsRoutes)
 
 server.get('/', (req, res) => res.send('All the posts'))
 
