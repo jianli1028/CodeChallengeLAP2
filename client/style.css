@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Shadows+Into+Light&display=swap');
+
+body {
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,65,185,0.786859631147541) 47%);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(107, 142, 35, 0.88);
+    padding: 4%;
+    position: sticky;
+    z-index: 100;
+  }
+
+  .container {
+    flex-basis: 75%;
+    padding: 12% 40%;
+    position: sticky;
+    align-self: center;
+  }
+
+  .nav-left {
+    display : flex;
+    align-items: flex-start;
+  }
+
+
+ .logo {
+    width: 500px;
+    margin-right: 55px;
+    color: black;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+/* --------- BODY ---------- */
+
+.title-row {
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: 'Shadows Into Light', cursive;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 50%;
+}
+
+.name-row {
+    color: whitesmoke;
+    font-size: 27px;
+    font-family: 'Shadows Into Light', cursive;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 50%;
+}
+
+.story-row {
+    color: whitesmoke;
+    font-size: 24px;
+    font-family: 'Shadows Into Light', cursive;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 75%;
+
+}
+
+
+  .new-story {
+    color: black;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 15px;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  button {
+    position: relative;
+    left: 50px;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background: whitesmoke;
+    border-radius: 12px;
+    padding: 2px 3px;
+    text-align: center;
+    cursor: pointer;
+   
+  }
+
