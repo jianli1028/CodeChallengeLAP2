@@ -27,7 +27,7 @@ function displayStories(stories) {
     title.textContent = story.title;
     article.append(title);
 
-    // CREATE NAME OF AUTHOR FOR STORY
+    // CREATE NAME OF name FOR STORY
     const name = document.createElement("h3");
     title.style.fontFamily = "Shadows Into Light";
     title.style.fontSize = "27px";

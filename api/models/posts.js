@@ -4,7 +4,7 @@ module.exports = class Post {
     constructor(data){
         this.id = data.id;
         this.title = data.title;
-        this.author = data.author;
+        this.name = data.name;
         this.story = data.story;
         this.publicationDay = data.publicationDay
     };
@@ -26,11 +26,11 @@ module.exports = class Post {
     static async create(postData) {
         return new Promise (async (resolve, reject) =>{
             try {
-                const {title, author, story, publicationDay} = postData;
-                //let post = await Post.findOrCreateByName(author);
-                let result = await db.query(`INSERT INTO posts (title, author, story, publicationDay)
+                const {title, name, story, publicationDay} = postData;
+                //let post = await Post.findOrCreateByName(name);
+                let result = await db.query(`INSERT INTO posts (title, name, story, publicationDay)
                                              VALUE ($1, $2, $3, $4)
-                                             RETURNING *;`, [title, author, story, publicationDay]);
+                                             RETURNING *;`, [title, name, story, publicationDay]);
                 resolve (result.rows[0]);
             } catch(err) {
                 reject("Your story could not be created");
@@ -44,7 +44,7 @@ module.exports = class Post {
                 const result = await db.query(`UPDATE *
                                                FROM posts
                                                WHERE id = $1
-                                               RETURNING author;`, [ this.id ]);
+                                               RETURNING name;`, [ this.id ]);
                 resolve (result.rows[0]);
             } catch (err) {
                 reject("Post could not be updated")
