@@ -2,7 +2,7 @@ services:
   client:
     container_name: telegraph-replica-client
     build: ./client
-    image: node
+    image: node:19.9.0
     ports: 
       - 8080:8080
     working_dir: /code

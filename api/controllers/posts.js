@@ -1,4 +1,4 @@
-const Post = require("../models/posts");
+const Post = require("../models/Post");
 
 async function show (req, res) {
     try {
@@ -18,3 +18,4 @@ async function create (req, res) {
     }
 };
 
+module.exports = { show, create };
