@@ -16,3 +16,7 @@ Recreate [Telegraph](https://telegra.ph/ "Telegraph") aesthetically, then create
 
 _all the dependencies will be added later on_
 
+* node
+* cors
+* express
+* nodemon

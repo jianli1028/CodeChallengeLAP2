@@ -2,7 +2,7 @@ services:
   client:
     container_name: telegraph-replica-client
     build: ./client
-    image: node
+    image: node:12.18.4
     ports: 
       - 8080:8080
     working_dir: /code
@@ -12,7 +12,7 @@ services:
         target: /code
     command: [ "http-server" ]
   api:
-    image: node
+    image: node:12.18.4
     container_name: telegraph-replica-api
     ports: 
       - 3000:3000
@@ -28,7 +28,7 @@ services:
     command: bash -c "npm install && npm run dev"
 
   db:
-    image: node
+    image: postgres
     container_name: telegraph-replica-db
     volumes:
       - "dbdata:/var/lib/postgresql/data"
