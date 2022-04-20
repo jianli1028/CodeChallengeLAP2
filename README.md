@@ -13,15 +13,11 @@ Recreate [Telegraph](https://telegra.ph/ "Telegraph") aesthetically, then create
 * EDIT the post with proper endpoint
 
 # Installation & Dependencies
-
-_all the dependencies will be added later on_
-
-<<<<<<< HEAD
 * node
 * cors
 * express
 * nodemon
-=======
+
 ## WINS
 - Clear separation of services on both client & server side
 - HTML & CSS done aesthetically well
@@ -30,4 +26,3 @@ _all the dependencies will be added later on_
 - Getting server running
 - Getting client to fetch from api
 - Installing node modules; package.json file is incomplete
->>>>>>> 68f8466c7192c58f34af52547ddebb9af18f5002
