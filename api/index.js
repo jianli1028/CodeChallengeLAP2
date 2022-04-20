@@ -1,5 +1,5 @@
 const app = require('./server');
-const devSeed = require('./dbConfig/init'); //add the dev requirement
+const devSeed = require('./dbConfig/init'); 
 
 const port = process.env.PORT || 3000;
 

@@ -11,10 +11,11 @@ async function show (req, res) {
 
 async function create (req, res) {
     try {
-        const posts = await posts.create(req.body);
+        const posts = await Post.create(req.body);
         res.status(200).json(book)
     } catch (err) {
         res.status(422).json({err})
     }
 };
 
+module.exports = { show, create };
