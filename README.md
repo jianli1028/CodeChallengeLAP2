@@ -16,3 +16,11 @@ Recreate [Telegraph](https://telegra.ph/ "Telegraph") aesthetically, then create
 
 _all the dependencies will be added later on_
 
+## WINS
+- Clear separation of services on both client & server side
+- HTML & CSS done aesthetically well
+
+## CHALLENGES
+- Getting server running
+- Getting client to fetch from api
+- Installing node modules; package.json file is incomplete
